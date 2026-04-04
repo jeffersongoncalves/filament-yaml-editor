@@ -1,6 +1,6 @@
 <div class="filament-hidden">
 
-![Filament YAML Editor](https://raw.githubusercontent.com/jeffersongoncalves/filament-yaml-editor/main/art/jeffersongoncalves-filament-yaml-editor.jpg)
+![Filament YAML Editor](https://raw.githubusercontent.com/jeffersongoncalves/filament-yaml-editor/3.x/art/jeffersongoncalves-filament-yaml-editor.jpg)
 
 </div>
 
