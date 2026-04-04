@@ -6,3 +6,4 @@
 phpstan.neon
 composer.lock
 .idea
+.claude
