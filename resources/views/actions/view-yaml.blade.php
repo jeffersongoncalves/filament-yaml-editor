@@ -1,6 +1,6 @@
 <div
-    ax-load
-    ax-load-src="{{ \Filament\Support\Facades\FilamentAsset::getAlpineComponentSrc('yaml-editor', 'jeffersongoncalves/filament-yaml-editor') }}"
+    x-load
+    x-load-src="{{ \Filament\Support\Facades\FilamentAsset::getAlpineComponentSrc('yaml-editor', 'jeffersongoncalves/filament-yaml-editor') }}"
     x-data="yamlEditor({
         state: @js($yaml),
         readOnly: true,

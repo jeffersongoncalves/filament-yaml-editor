@@ -10,8 +10,8 @@
 
 <x-dynamic-component :component="$getFieldWrapperView()" :field="$field">
     <div
-        ax-load
-        ax-load-src="{{ \Filament\Support\Facades\FilamentAsset::getAlpineComponentSrc('yaml-editor', 'jeffersongoncalves/filament-yaml-editor') }}"
+        x-load
+        x-load-src="{{ \Filament\Support\Facades\FilamentAsset::getAlpineComponentSrc('yaml-editor', 'jeffersongoncalves/filament-yaml-editor') }}"
         x-data="yamlEditor({
             state: $wire.{{ $applyStateBindingModifiers("\$entangle('{$statePath}')") }},
             readOnly: @js($readOnly),
