@@ -10,11 +10,11 @@ A rich YAML editor field for [Filament](https://filamentphp.com) powered by [Cod
 
 ## Version Compatibility
 
-| Branch | Filament | Laravel | PHP | Tag Prefix |
-|--------|----------|---------|-----|------------|
-| `1.x`  | v3       | 10+     | 8.2+ | no prefix (e.g. `1.0.0`) |
-| `2.x`  | v4       | 11+     | 8.2+ | `v` prefix (e.g. `v2.0.0`) |
-| `3.x`  | v5       | 11.28+  | 8.2+ | `v` prefix (e.g. `v3.0.0`) |
+| Branch | Filament | Laravel | PHP |
+|--------|----------|---------|-----|
+| `1.x`  | v3       | 10+     | 8.2+ |
+| `2.x`  | v4       | 11+     | 8.2+ |
+| `3.x`  | v5       | 11.28+  | 8.2+ |
 
 ## Installation
 
@@ -74,17 +74,26 @@ YamlEditorField::make('config')
     ->placeholder("# paste your YAML here\n")
 ```
 
-### Table Column
+### Table Action (View YAML in Modal)
 
-Shows a "View YAML" button that opens a modal with the full YAML content in a read-only CodeMirror editor.
+Use the `ViewYamlAction` to add a button in your table that opens a modal with the YAML content in a read-only CodeMirror editor.
 
 ```php
-use JeffersonGoncalves\FilamentYamlEditor\Tables\Columns\YamlEditorColumn;
+use JeffersonGoncalves\FilamentYamlEditor\Actions\ViewYamlAction;
 
-YamlEditorColumn::make('config')
-    ->label('Configuration')
-    ->modalHeight(500)  // optional, default 400
-    ->dark()            // optional
+// In your table's actions (Filament v4/v5)
+->recordActions([
+    ViewYamlAction::make()
+        ->column('config')       // required: the model attribute to display
+        ->editorHeight(500)      // optional, default 400
+        ->dark(),                // optional
+])
+
+// In Filament v3
+->actions([
+    ViewYamlAction::make()
+        ->column('config'),
+])
 ```
 
 ### Infolist Entry
@@ -141,7 +150,7 @@ $request->validate([
 - **Theme support** — Auto-detects system/Filament dark mode, or force with `->dark()` / `->light()`
 - **Bidirectional sync** — Full Livewire `$entangle` support with `wire:ignore`
 - **Cast support** — `YamlCast` for Eloquent models, `castState()` for form fields
-- **Table modal** — View YAML content in a modal from table columns
+- **Table action** — View YAML content in a modal with syntax highlighting
 - **Infolist entry** — Read-only YAML display for infolists
 - **Mobile friendly** — Safe area insets for fullscreen mode
 
