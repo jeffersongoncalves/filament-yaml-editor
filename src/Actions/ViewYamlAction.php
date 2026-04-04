@@ -3,7 +3,7 @@
 namespace JeffersonGoncalves\FilamentYamlEditor\Actions;
 
 use Closure;
-use Filament\Actions\Action;
+use Filament\Tables\Actions\Action;
 use Illuminate\Contracts\View\View;
 use Symfony\Component\Yaml\Yaml;
 
