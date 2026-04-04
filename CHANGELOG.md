@@ -2,6 +2,12 @@
 
 All notable changes to `filament-yaml-editor` will be documented in this file.
 
+## 1.0.3 - 2026-04-04
+
+### Bug Fix
+
+- Fix Alpine component not loading: use `x-load` / `x-load-src` instead of `ax-load` / `ax-load-src`
+
 ## 1.0.2 - 2026-04-04
 
 ### Changes
