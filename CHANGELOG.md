@@ -2,6 +2,12 @@
 
 All notable changes to `filament-yaml-editor` will be documented in this file.
 
+## 2.0.4 - 2026-04-04
+
+### Bug Fix
+
+- Remove unnecessary textarea that was visible on form pages
+
 ## 2.0.3 - 2026-04-04
 
 ### Bug Fix
