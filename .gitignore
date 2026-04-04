@@ -5,5 +5,4 @@
 .phpunit.cache
 phpstan.neon
 composer.lock
-pnpm-lock.yaml
 .idea
