@@ -9,6 +9,7 @@
         "codemirror",
         "form-field"
     ],
+    "homepage": "https://github.com/jeffersongoncalves/filament-yaml-editor",
     "license": "MIT",
     "authors": [
         {
