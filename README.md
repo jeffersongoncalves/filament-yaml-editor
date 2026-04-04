@@ -1,3 +1,9 @@
+<div class="filament-hidden">
+
+![Filament YAML Editor](https://raw.githubusercontent.com/jeffersongoncalves/filament-yaml-editor/main/art/jeffersongoncalves-filament-yaml-editor.jpg)
+
+</div>
+
 # Filament YAML Editor
 
 A rich YAML editor field for [Filament](https://filamentphp.com) powered by [CodeMirror 6](https://codemirror.net/) with syntax highlighting, real-time linting, toolbar, and fullscreen support.
