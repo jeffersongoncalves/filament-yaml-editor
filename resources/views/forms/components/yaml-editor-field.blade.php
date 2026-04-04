@@ -39,14 +39,5 @@
         @endif
 
         <div x-ref="editor" class="yaml-editor-container" style="min-height: {{ $height }}px"></div>
-
-        <textarea
-            id="{{ $id }}"
-            x-ref="hidden"
-            class="sr-only"
-            x-bind:value="state"
-            aria-label="{{ $getLabel() }}"
-            tabindex="-1"
-        ></textarea>
     </div>
 </x-dynamic-component>
