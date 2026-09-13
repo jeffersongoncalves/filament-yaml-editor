@@ -1,0 +1,77 @@
+version: 2
+updates:
+  # Composer — 3.x
+  - package-ecosystem: "composer"
+    directory: "/"
+    target-branch: "3.x"
+    schedule:
+      interval: "weekly"
+    groups:
+      all-composer:
+        patterns:
+          - "*"
+
+  # Composer — 2.x
+  - package-ecosystem: "composer"
+    directory: "/"
+    target-branch: "2.x"
+    schedule:
+      interval: "weekly"
+    groups:
+      all-composer:
+        patterns:
+          - "*"
+
+  # Composer — 1.x
+  - package-ecosystem: "composer"
+    directory: "/"
+    target-branch: "1.x"
+    schedule:
+      interval: "weekly"
+    groups:
+      all-composer:
+        patterns:
+          - "*"
+
+  # npm — 3.x
+  - package-ecosystem: "npm"
+    directory: "/"
+    target-branch: "3.x"
+    schedule:
+      interval: "weekly"
+    groups:
+      all-npm:
+        patterns:
+          - "*"
+
+  # npm — 2.x
+  - package-ecosystem: "npm"
+    directory: "/"
+    target-branch: "2.x"
+    schedule:
+      interval: "weekly"
+    groups:
+      all-npm:
+        patterns:
+          - "*"
+
+  # npm — 1.x
+  - package-ecosystem: "npm"
+    directory: "/"
+    target-branch: "1.x"
+    schedule:
+      interval: "weekly"
+    groups:
+      all-npm:
+        patterns:
+          - "*"
+
+  # GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      all-actions:
+        patterns:
+          - "*"
