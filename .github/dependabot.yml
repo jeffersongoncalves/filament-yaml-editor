@@ -10,6 +10,9 @@ updates:
       all-composer:
         patterns:
           - "*"
+    ignore:
+      - dependency-name: "filament/filament"
+        update-types: ["version-update:semver-major"]
 
   # Composer — 2.x
   - package-ecosystem: "composer"
@@ -21,6 +24,9 @@ updates:
       all-composer:
         patterns:
           - "*"
+    ignore:
+      - dependency-name: "filament/filament"
+        update-types: ["version-update:semver-major"]
 
   # Composer — 1.x
   - package-ecosystem: "composer"
@@ -32,6 +38,9 @@ updates:
       all-composer:
         patterns:
           - "*"
+    ignore:
+      - dependency-name: "filament/filament"
+        update-types: ["version-update:semver-major"]
 
   # npm — 3.x
   - package-ecosystem: "npm"
