@@ -18,7 +18,7 @@
         "@codemirror/view": "^6.43.12",
         "autoprefixer": "^10.6.1",
         "codemirror": "^6.0.1",
-        "cssnano": "^9.0.4",
+        "cssnano": "^9.0.5",
         "esbuild": "^0.28.2",
         "js-yaml": "^5.4.2",
         "npm-run-all2": "^9.0.3",
