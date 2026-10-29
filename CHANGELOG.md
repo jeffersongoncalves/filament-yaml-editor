@@ -2,6 +2,11 @@
 
 All notable changes to `filament-yaml-editor` will be documented in this file.
 
+## 3.1.0 - 2026-10-28
+
+- Add Laravel Boost guidelines and skills.
+- Support Laravel 13.
+
 ## 3.0.4 - 2026-04-04
 
 ### Bug Fix
