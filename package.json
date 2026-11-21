@@ -12,7 +12,7 @@
     "devDependencies": {
         "@codemirror/commands": "^6.11.1",
         "@codemirror/lang-yaml": "^6.1.1",
-        "@codemirror/lint": "^6.9.7",
+        "@codemirror/lint": "^6.9.8",
         "@codemirror/state": "^6.7.6",
         "@codemirror/theme-one-dark": "^6.1.2",
         "@codemirror/view": "^6.43.15",
@@ -22,7 +22,7 @@
         "esbuild": "^0.28.2",
         "js-yaml": "^5.5.0",
         "npm-run-all2": "^9.0.4",
-        "postcss": "^8.5.32",
+        "postcss": "^8.5.33",
         "postcss-cli": "^12.0.0"
     }
 }
